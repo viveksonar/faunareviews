@@ -3,6 +3,7 @@ import axios from "axios";
 import ReactStars from "react-stars";
 import {
   Grid,
+  makeStyles,
   CardContent,
   CardMedia,
   Button,
@@ -11,8 +12,6 @@ import {
   Typography,
   CardActions,
 } from "@material-ui/core";
-import useStyles from './gridstyle';
-import useStylesCards from './cardstyle';
 import Modal from "react-bootstrap/Modal";
 import "./index.css";
 
@@ -36,12 +35,43 @@ export default () => {
     const imgUrl = `https://avatars.dicebear.com/api/human/${random}.svg?mood[]=happy`;
     return imgUrl;
   };
+  const useStyles = makeStyles({
+    gridContainer: {
+      paddingLeft: "40px",
+      paddingRight: "40px"
+    }
+  });
+  const useStylesCards = makeStyles({
+    root: {
+      maxWidth: 200
+    },
+    bullet: {
+      display: "inline-block",
+      margin: "0 2px",
+      transform: "scale(0.8)"
+    },
+    title: {
+      fontSize: 14
+    },
+    pos: {
+      marginBottom: 12
+    },
+    content:{
+      flexGrow: 1,
+      align: "center"
+    },
+    media: {
+      height: 70,
+      paddingTop: '56.25%', // 16:9
+    }
+  });
+
   // For using css valuse in card components
   const classes = useStyles();
   const classesCards = useStylesCards();
   return (
     <>
-      <div className="container1">
+      <div className="container">
         <div>
           <Grid
             container
