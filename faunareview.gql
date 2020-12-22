@@ -1,0 +1,9 @@
+type Review {
+    name: String!
+    text: String!
+    rating: Int!
+ }
+
+ type Query {
+    allReviews: [Review!]!
+ }
