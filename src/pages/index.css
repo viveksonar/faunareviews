@@ -37,8 +37,12 @@ main {
     margin-top: 10vh;
     align-items: center;
 }
-
+.btn {
+    min-height: 30px;
+    min-width: 80px;
+}
 .auth-btn-grp {
+    background-color: white;
     margin-top: 1px;
     margin-right: 2px;
     float: right;
