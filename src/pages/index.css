@@ -37,3 +37,22 @@ main {
     margin-top: 10vh;
     align-items: center;
 }
+
+.auth-btn-grp {
+    margin-top: 1px;
+    margin-right: 2px;
+    float: right;
+    position: absolute;
+    top:0;
+    right:0;
+ }
+
+ .add-review {
+    color: #000000;
+ }
+
+ .create-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
