@@ -6,7 +6,7 @@ Example of using [FaunaDB](https://fauna.com/) with [Netlify functions](https://
 
 This application is using [React](https://reactjs.org/) [Gatsby](https://www.gatsbyjs.com/) for the frontend, [Netlify Functions](https://www.netlify.com/docs/functions/) for API calls, [FaunaDB](https://fauna.com/) as the backing database, and [Netlify Identity](https://docs.netlify.com/visitor-access/identity/) for Authenticating users.
 
-![faunadb netlify](./public/images/faunareviews.png)
+![faunadb netlify](./images/faunareviews.png)
 
 ## Deploy with one click
 
@@ -275,4 +275,4 @@ As you can see, functions can be extremely powerful when combined with a cloud d
 
 The sky is the limit on what you can build with the JAMstack and we'd love to hear about what you make.
 
-![final appliaction](./public/images/final-app-min.gif)
+![final appliaction](./images/final-app-min.gif)
